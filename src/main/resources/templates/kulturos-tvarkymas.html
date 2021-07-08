@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>kultūros kortelė</title>
+	<link rel="stylesheet" href="main.css">
+	<style>
+		.data_form {
+			width: 90%;
+			margin: 12px auto;
+			padding: 12px;
+			border: 1px solid grey;
+		}
+		.data_form input, .data_form label {
+			width: 97%;
+			margin: 17px 7px;
+			padding: 7px;
+		}
+		.data_form input {
+		
+			margin-top: 7px;
+		}
+		.data_form label {
+		
+			margin-bottom: 7px;
+		}
+		.skyrius {
+		
+			text-align: center;
+			width: 97%;
+			margin: 17px 7px 4px 7px;
+			padding: 7px;
+			background-color: lightgreen;
+			border-bottom: 1px solid green;			
+		}
+		hr {
+		
+			width: 70%;
+			margin: 3px auto;
+		}
+	</style>
+</head>
+<body>
+	<h3>kultūros duomenys</h3>
+	<form action="" method="POST">
+		<div class="data_form">
+			<label for="pav">pavadinimas</label>
+			<input type="text" name="pav" value="Nežinoma kultūra">
+			
+			<label for="pradzia">pradžia</label>
+			<input type="text" name="pradzia" value="">
+			
+			<label for="pabaiga">pabaiga</label>
+			<input type="text" name="pabaiga" value="">			
+			
+			<div class="skyrius">platesnė informacija</div>
+			
+			<label for="plotas_teritorijos">plotas teritorijos</label>	
+			<input type="text" name="plotas_teritorijos" value="1">
+			
+			<label for="skaicius_artefaktu">artefaktų skaičius</label> 
+			<input type="text" name="skaicius_artefaktu" value="">
+			
+			<label for="aprasymas">aprašymas</label>	
+			<textarea name="aprasymas" value="">
+			
+			<input type="text" name="prisitraukimai_pries" value="4"> - 			
+			<label for="elementai_egzistuoja_dabar">elementai egzistuoja dabar</label>
+	
+			<input type="hidden" name="id" value="0">
+				
+			<input type="submit" name="saugoti" value="saugoti">
+		</div>
+	</form>
+</body>
+</html>
